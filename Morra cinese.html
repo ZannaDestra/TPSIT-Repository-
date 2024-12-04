@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Morra Cinese</h1>
+    
+    <p></p>
+    <button onclick="getTime()">Bottone</button>
+
+    <div>
+            <p id="number"></p>
+            <p id="demo"></p>
+    </div>
+    
+    <div>
+        <img id="sasso" src="https://tonazzosrl.it/images/Vascheinsassoscontornateok/178vascainsasso.jpg"  style="display:none;">
+        <img id="carta" src="https://shop.labottegadelleidee.com/cdn/shop/products/carta_a_mano_foglioA4_5277aeca-167d-40f4-ab74-ba6684bcac9b.jpg?v=1534493523"  style="display:none;">
+        <img id="forbici" src="https://arrotinocoltelleria.it/wp-content/uploads/2020/09/forbici.jpg"  style="display:none;">
+    </div>
+
+<script>
+    const mioOutput=document.getElementById("number");
+    const immagine1 = document.getElementById("sasso");
+    const immagine2 = document.getElementById("carta");
+    const immagine3 = document.getElementById("forbici");
+    // const intervalId = setInterval(getTime, 10);
+    let x = Math.floor((Math.random() * 3) + 1);
+    number=4;
+    
+    function getTime(){
+    
+        
+        const demo=document.getElementById("demo").innerHTML = x;
+   
+   number--;
+   mioOutput.innerHTML+= number
+   if (number==0){
+        clearInterval(intervalId);
+        
+   }
+        if (demo==1){
+       
+       
+        immagine1.style.display = "block";
+        }
+
+   
+        if (demo==2){
+        
+        immagine2.style.display = "block";
+
+        }
+
+        if (demo==3){
+        
+        immagine3.style.display = "block";
+
+        }
+   
+    
+   
+   
+
+
+}
+
+
+
+</script>
+
+</body>
+</html>

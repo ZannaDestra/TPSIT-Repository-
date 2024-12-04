@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morra Cinese</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gioco della Morra Cinese</h1>
+    <p>Scegli una mossa:</p>
+    <button class="button" onclick="gioca('sasso')">Sasso</button>
+    <button class="button" onclick="gioca('carta')">Carta</button>
+    <button class="button" onclick="gioca('forbici')">Forbici</button>
+
+    <div class="result" id="risultato"></div>
+
+    <script>
+        function gioca(mossaGiocatore) {
+            const mosse = ['sasso', 'carta', 'forbici'];
+            const mossaComputer = mosse[Math.floor(Math.random() * 3)];
+
+            let risultato = '';
+
+            if (mossaGiocatore === mossaComputer) {
+                risultato = 'Pareggio!';
+            } else if (
+                (mossaGiocatore === 'sasso' && mossaComputer === 'forbici') ||
+                (mossaGiocatore === 'carta' && mossaComputer === 'sasso') ||
+                (mossaGiocatore === 'forbici' && mossaComputer === 'carta')
+            ) {
+                risultato = 'Hai vinto!';
+            } else {
+                risultato = 'Hai perso!';
+            }
+
+            document.getElementById('risultato').innerHTML = `
+                Hai scelto: ${mossaGiocatore}<br>
+                Il computer ha scelto: ${mossaComputer}<br>
+                Risultato: ${risultato}
+            `;
+        }
+    </script>
+</body>
+</html>
