@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button style="color: black; background-color: white;" id="btn-start"> Secondata </button>
+    <button style="color: black; background-color: white;" id="btn-start1"> Millisecondata </button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="s1"></span>
+ 
+
+ 
+<script>
+ 
+function scrivi (){
+ 
+var d = new Date();
+ 
+document.getElementById('s1').innerHTML = d;
+ 
+}
+ 
+ 
+document.getElementById('btn-start').onclick = function(){
+ 
+                 setInterval(scrivi, 1000);
+             };
+ 
+<span id="s2"></span>
+ 
+
+ 
+
+  
+function scrivi (){
+  
+var d1 = new Date();
+  
+document.getElementById('s2').innerHTML = d1;
+  
+}
+  
+  
+document.getElementById('btn-start1').onclick = function(){
+  
+                  setInterval1(scrivi, 10000);
+              };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Frasi Casuali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid black;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #fraseContainer {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            border: 2px solid black;
+            min-width: 200px;
+            width: fit-content;
+            margin: 0 auto;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generatore di Frasi Casuali</h1>
+        <button onclick="generaFrase()">Genera una frase</button>
+        <div id="fraseContainer"></div>
+    </div>
+
+    <script>
+        const soggetti = ["Mario", "Luca", "Giulia", "Anna", "Francesco", "Elena", "Roberto", "Sara", "Davide", "Chiara"];
+        const verbi = ["mangia", "corre", "legge", "scrive", "disegna", "parla", "cammina", "guarda", "ascolta", "gioca"];
+        const complemento = ["una mela", "nel parco", "un libro", "una lettera", "un quadro", "al telefono", "sul marciapiede", "la TV", "musica", "a calcio"];
+
+        function generaFrase() {
+            const soggetto = soggetti[Math.floor(Math.random() * soggetti.length)];
+            const verbo = verbi[Math.floor(Math.random() * verbi.length)];
+            const compl = complemento[Math.floor(Math.random() * complemento.length)];
+            const frase = `${soggetto} ${verbo} ${compl}`;
+            document.getElementById("fraseContainer").textContent = frase;
+        }
+    </script>
+</body>
+</html>

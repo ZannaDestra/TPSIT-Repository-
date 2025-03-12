@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Virtual Memory</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+ 
+  background-color: #00eeff;
+  width: auto;
+  height: 50px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Virtual Memory</h1>
+</div>
+
+<div class="topnav">
+  <a href="#" ><img style="height: 55px; width: 70px; margin-top: -15px; margin-left: -4px;" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="menù"></a>
+  <p style="color: #000000; font: 1900; size: 900px;" >PLAY MEMORY</p>
+</div>
+
+<img style="height: 200px;" style="width: 200px; margin-top: -700px;"  src="https://addons.mozilla.org/user-media/previews/full/239/239191.png?modified=1622135879" alt="Monika">
+<img style="height: 200px;" style="width: 400px; margin-top: -700px;"  src="https://preview.redd.it/m4o2z38ykg801.png?auto=webp&s=5140155f7bc64ac71635dd39208f47e4014c8ecb" alt="Yuri">
+<img style="height: 200px;" style="width: 400px; margin-top: -700px;"  src="https://i1.sndcdn.com/artworks-000444861150-56mhsg-t500x500.jpg" alt="Sayori">
+<img style="height: 200px;" style="width: 200px; margin-top: -700px;"  src="https://i.ytimg.com/vi/HCyP5RVG-FY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDKgzm9OSEj9vL-h627OA9aHfnudQ" alt="Natsuki">
+<span id="s1"></span>
+ 
+<button id="btn-stop">stop</button>
+ 
+<script>
+ 
+function scrivi (){
+ 
+var d = new Date();
+ 
+document.getElementById('s1').innerHTML = d;
+ 
+}
+ 
+var interval = setInterval(scrivi, 1000);
+ 
+document.getElementById('btn-stop').onclick = function(){
+ 
+                 clearInterval(interval);
+             };
+ 
+</script>
+  
+</body>
+</html>
