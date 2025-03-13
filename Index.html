@@ -1,154 +1,95 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
-    <title>Presentazione</title>
-
+<!doctype html>
+<html lang="en">
+  <head>
     <style>
-    
-        body {margin:0;font-family:Arial}
+    .body{
+      width: 101vw;
+      height: 101vh;
+      margin-top: -1vh;
+      margin-left: -1vw;
+      z-index: -2;
+      position: fixed;
+    }
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-        .topnav {
-        overflow: hidden;
-        background-color: #333;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        }
-
-        .active {
-        background-color: #04AA6D;
-        color: white;
-        }
-
-        .topnav .icon {
-        display: none;
-        }
-
-        .dropdown {
-        float: left;
-        overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-        font-size: 17px;    
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-        }
-
-        .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        }
-
-        .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        }
-
-        .topnav a:hover, .dropdown:hover .dropbtn {
-        background-color: #555;
-        color: white;
-        }
-
-        .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-        }
-
-        .dropdown:hover .dropdown-content {
-        display: block;
-        }
-
-        @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child), .dropdown .dropbtn {
-            display: none;
-        }
-        .topnav a.icon {
-            float: right;
-            display: block;
-        }
-        }
-
-        @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .topnav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-        .topnav.responsive .dropdown {float: none;}
-        .topnav.responsive .dropdown-content {position: relative;}
-        .topnav.responsive .dropdown .dropbtn {
-            display: block;
-            width: 100%;
-            text-align: left;
-        }
-        }
-    </style>
-</head>
-<body>
-
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#Pagina web.html">News</a>
-  <a href="#Mi descrivo">Contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#Scatole e poesie">Scatole e poesie</a>
-      <a href="#Div annidati">Div annidati</a>
-      <a href="#link">I miei link</a>
+    <title>I miei lavori</title>
+  </head>
+  <body>
+       <img class="body" src="cosmos-1853491.jpg" alt="">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+       
+        I miei lavori
+        </a>
+    </nav>
+    <div class="container my-5 text-center" style="max-width: 580px;">
+        <h1 style="color: white;">Tutti i miei lavori del terzo anno</h1>
+       
     </div>
-  </div> 
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav with Dropdown</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="html.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lavori html</h5>
+                      <p class="card-text">Qui ci sono i primi lavori fatti a inizio anno, che contengono le basi per quelli futuri</p>
+                      <a href="html.html" class="btn btn-primary">Vai</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-top: -1.5vh;">
+                    <img src="css.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lavori css</h5>
+                      <p class="card-text">Qui ci sono tutti i lavori in cui abbiamo approfondito tutto quello che si può scrivere nel tag style </p>
+                      <a href="css.html" class="btn btn-primary">Vai</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="js.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lavori javascript</h5>
+                      <p class="card-text">Qui ci sono tutti i lavori in cui abbiamo utilizzato funzioni ed eventi</p>
+                      <a href="js.html" class="btn btn-primary">Vai</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-top: 7vw;">
+                    <img src="Rock-paper-scissors.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Morra cinese</h5>
+                      <p class="card-text">Qui c'è il primo gioco fatto nell'anno, la morra cinese</p>
+                      <a href="morra_cinese.html" class="btn btn-primary">Vai</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-left: -10vw; margin-top: 10vw;">
+                    <img src="futuro-nube.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Progetti futuri</h5>
+                      <p class="card-text">Qui ci sono tutti i lavori in corso di sviluppo</p>
+                      <a onclick="alert('Nessun lavoro in corso')" class="btn btn-primary" style="color: white;">Vai</a>
+                    </div>
+                  </div>
+            </div>
+         
+   
+    </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
